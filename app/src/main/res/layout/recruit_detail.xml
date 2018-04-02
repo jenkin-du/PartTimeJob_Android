@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="招聘简介" />
+    <!--招聘详情-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bar_bottom"
+        android:layout_below="@+id/id_navi_bar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="招聘发传单员"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_palce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="朝阳/40km"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_updateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingStart="20dp"
+                            android:text="1小时前"
+                            android:textColor="@color/grey" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <include layout="@layout/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="工资待遇："
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_salary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="120元/天"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="兼职类型："
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="发单"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="招聘人数："
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_recruit_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="999人"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="性别要求："
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/id_recruit_detail_sex_request"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:text="不限"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="工作日期："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="2016年7月18号开始工作（共30天）"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="工作时段："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_work_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="9:00-17:00"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!--<include layout="@layout/horizontal_line" />-->
+
+                <!--<include-->
+                <!--layout="@layout/horizontal_line"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.05dp"-->
+                <!--android:layout_marginTop="10dp" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:text="工作内容"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/id_recruit_detail_work_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:padding="10dp"
+                    android:text="发单"
+                    android:textSize="12sp" />
+
+                <include layout="@layout/horizontal_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/iiii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="已报名人数："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_recruited_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/iiii"
+                        android:layout_toRightOf="@+id/iiii"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="3人"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="10dp"-->
+                    <!--android:layout_height="10dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginEnd="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:src="@drawable/arrow_right" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/id_recruit_detail_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/press_bg"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/ii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="发布机构："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/ii"
+                        android:layout_toRightOf="@+id/ii"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="北京尚泉有限公司"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <include layout="@layout/horizontal_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/iii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="详细地址："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_company_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/iii"
+                        android:layout_toRightOf="@+id/iii"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="50dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="50dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="北京市北京海淀优胜大厦"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/id_recruit_detail_location"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/location_large" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="联系人："
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_company_contact_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="夏雨" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/recruit_detail_bg_foreground"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="联系电话："
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/id_recruit_detail_company_contact_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="18251978654" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <View
+            android:id="@+id/id_progress_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <include
+        layout="@layout/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_above="@+id/bar_bottom" />
+
+    <LinearLayout
+        android:id="@+id/bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bar_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/id_recruit_detail_collect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/press_bg"
+                android:src="@drawable/star_empty" />
+        </FrameLayout>
+        <!--底部导航栏-->
+        <View
+            android:layout_width="0.05dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey" />
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/id_recruit_detail_contact"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/press_bg"-->
+                <!--android:src="@drawable/communicate" />-->
+        <!--</FrameLayout>-->
+
+        <View
+            android:layout_width="0.05dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/id_recruit_detail_phone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/press_bg"
+                android:src="@drawable/phone_ring" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/id_recruit_detail_apply"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bg_no_corners"
+            android:text="我要报名"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

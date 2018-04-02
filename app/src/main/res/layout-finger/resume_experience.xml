@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_experience_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_text="确定"
+        app:title_text="经历" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/id_experience_reason"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="自己的经历"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/id_experience_Text_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="还可以输入140个字"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <include layout="@layout/horizontal_line" />
+
+</LinearLayout>

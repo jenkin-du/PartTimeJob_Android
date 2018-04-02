@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_account_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:img_visible="true"
+        app:title_text="我的钱包" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+           android:layout_marginBottom="30dp"
+            android:id="@+id/money_bag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/money_bag_64px" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_toEndOf="@id/money_bag"-->
+            <!--android:layout_toRightOf="@id/money_bag"-->
+            <!--android:text="账户余额（元）" />-->
+
+
+        <TextView
+            android:id="@+id/inti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="¥"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/id_account_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0.00"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_margin"
+        android:background="@color/bar_bg_blue" />
+
+    <!--该功能先保留，以后实现-->
+    <!--<LinearLayout-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp">-->
+        <!---->
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:text="收入明细"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"/>-->
+        <!--<View-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@color/space"-->
+            <!--android:layout_width="0.05dp"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!---->
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:text="支出明细"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"/>-->
+    <!--</LinearLayout>-->
+
+    <!--该功能先保留，以后开发-->
+    <Button
+        android:text="提现"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

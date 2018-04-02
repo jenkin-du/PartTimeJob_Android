@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_mission_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="我的任务" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_mission_enrolled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已报名" />
+
+            <TextView
+                android:id="@+id/id_mission_enrolled_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/id_mission_enrolled"
+                android:layout_toRightOf="@id/id_mission_enrolled"
+                android:text="0"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/id_mission_enrolled_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/bar_indicator" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.05dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bar_bg_blue" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_mission_employed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已录取" />
+
+            <TextView
+                android:id="@+id/id_mission_employed_mun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/id_mission_employed"
+                android:layout_toRightOf="@id/id_mission_employed"
+                android:text="0"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/id_mission_employed_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/bar_indicator"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.05dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bar_bg_blue" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_mission_worked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已到岗" />
+
+            <TextView
+                android:id="@+id/id_mission_worked_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/id_mission_worked"
+                android:layout_toRightOf="@id/id_mission_worked"
+                android:text="0"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/id_mission_worked_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/bar_indicator"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.05dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bar_bg_blue" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_mission_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已完结" />
+
+            <TextView
+                android:id="@+id/id_mission_finished_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/id_mission_finished"
+                android:layout_toRightOf="@id/id_mission_finished"
+                android:text="0"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/id_mission_finished_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/bar_indicator"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_mission_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

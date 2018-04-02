@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_company_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myView:title_text="公司简介" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="成都天昊商贸有限公司"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="20dp"
+                        android:text="详细地址："
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_company_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="30dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="20dp"
+                        android:text="柳城文府苑81号会所花园1栋1层5号"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10sp"
+                    android:paddingStart="10sp"
+                    android:paddingTop="20dp"
+                    android:text="相关简介"
+                    android:textSize="12sp" />
+
+                <include
+                    layout="@layout/horizontal_line"/>
+                <TextView
+                    android:id="@+id/id_company_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="简介"
+                    android:textSize="14sp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:text="综合评分:"
+                        android:textColor="@color/grey" />
+
+                    <RatingBar
+                        android:id="@+id/id_company_rating_bar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:isIndicator="true"
+                        />
+                    <TextView
+                        android:id="@+id/id_company_rating_bar_tv"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="3分"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View
+            android:id="@+id/id_company_progress_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

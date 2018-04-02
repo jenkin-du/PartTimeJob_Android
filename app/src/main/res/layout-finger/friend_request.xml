@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_friend_request_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="好友申请" />
+
+    <EditText
+        android:background="@null"
+        android:hint="发送验证信息"
+        android:id="@+id/id_friend_request_validate_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:id="@+id/id_friend_request_send_btn"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+</LinearLayout>

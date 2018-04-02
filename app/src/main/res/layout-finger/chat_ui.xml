@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_chat_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_text="更多"
+        app:img_visible="true"
+        app:img_res="@drawable/person_icon"
+        app:title_text="聊天" />
+
+
+    <View
+        android:id="@+id/line_above"
+        android:layout_width="wrap_content"
+        android:layout_height="0.05dp"
+        android:layout_below="@id/id_chat_navi_bar"
+        android:background="#bababa" />
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="0.05dp"
+        android:layout_above="@id/bottom"
+        android:background="#bababa" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/id_chat_new_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:inputType="textMultiLine"
+                android:minHeight="30dp" />
+
+            <Button
+                android:layout_margin="2dp"
+                android:id="@+id/id_chat_send_btn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:enabled="false"
+                android:text="发送"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_bg" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/id_chat_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/line_above"
+        android:background="#eef9f6"
+        android:divider="#ffffff"
+        android:dividerHeight="0dp">
+
+    </ListView>
+</RelativeLayout>

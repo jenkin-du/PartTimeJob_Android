@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_collected_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="我的收藏"/>
+    <FrameLayout
+        android:background="@color/grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:background="@color/white"
+            android:id="@+id/id_collected_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/id_collected_background_tv"
+            android:textColor="@color/grey"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="没有数据了"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

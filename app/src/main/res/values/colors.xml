@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_bg">#1ac1d4</color>
+    <color name="btn_pressed">#0ea6b7</color>
+    <color name="btn_enable_false">#0d637b</color>
+    <color name="bg">#7c599bd6</color>
+    <color name="grey">#b6b5b5</color>
+    <color name="space">#d1d1d1</color>
+    <color name="tv_bg_pressed">#f7f6f6</color>
+    <color name="onclick">#9b9999</color>
+    <color name="text_color">#f60ea0d6</color>
+    <color name="register_pressed">#f6076aec</color>
+    <color name="bar_bg">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="recruit_category_color_1">#1eecec</color>
+    <color name="background">#f2f2f0</color>
+    <color name="recruit_detail_bg_foreground">#ffffff</color>
+    <color name="bar_bg_blue">#88c2df</color>
+    <color name="blue">#53abd7</color>
+    <color name="orange">#d49b0c</color>
+    <color name="grey_bg">#f5f4f4</color>
+    <color name="btn_delete_bg">#e4675e</color>
+    <color name="text_color_blue">#57f1f1</color>
+    <color name="btn_delete_pressed">#ef3835</color>
+    <color name="edit_color">#f7b335</color>
+</resources>

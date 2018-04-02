@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.android.d.parttimejob.MyView.NavigationBar
+        android:id="@+id/id_apply_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="申请" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/id_apply_reason"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="输入自己的有点，特长和上班时间等，能提高被录用的概率哦"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/id_Text_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="还可以输入140个字"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <include layout="@layout/horizontal_line" />
+
+    <Button
+        android:id="@+id/id_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="提交" />
+</LinearLayout>

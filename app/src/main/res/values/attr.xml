@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyMessage">
+        <attr name="myMessageSize" format="dimension" />
+        <attr name="myMessageText" format="string" />
+        <attr name="myMessageColor" format="color" />
+        <attr name="myChatBackground" format="reference|color" />
+        <attr name="myHeadImg" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="FriendMessage">
+        <attr name="friendMessageSize" format="dimension" />
+        <attr name="friendMessageText" format="string" />
+        <attr name="friendMessageColor" format="color" />
+        <attr name="friendChatBackground" format="reference|color" />
+        <attr name="friendHeadImg" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="NavigationBar">
+        <attr name="right_text_color" format="color" />
+        <attr name="title_text" format="string" />
+        <attr name="img_visible" format="boolean" />
+        <attr name="right_text" format="string" />
+        <attr name="right_text_visible" format="boolean" />
+        <attr name="img_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InputBox">
+        <attr name="input_type" format="enum">
+            <enum name="text" value="0" />
+            <enum name="password" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="input_title" format="string" />
+        <attr name="input_content" format="string" />
+        <attr name="input_hint" format="string" />
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+</resources>
